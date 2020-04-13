@@ -12,21 +12,21 @@ describe ('CoinCounter', () => {
     var coinCounter = new CoinCounter(1.75, 2.25);
     var quarters = coinCounter.countChange();
     console.log(quarters);
-    expect(quarters).toEqual(" Quarters: 2")
+    expect(quarters).toEqual("Quarters: 2")
   });
 
   test ('returns string of number of quarters and dimes', () => {
     var coinCounter = new CoinCounter(1.75, 2.35);
     var coins = coinCounter.countChange();
     console.log(coins);
-    expect(coins).toEqual(" Dimes: 1 Quarters: 2")
+    expect(coins).toEqual("Dimes: 1 Quarters: 2 ")
   });
 
   test ('returns string of number of nickels, quarters and dimes', () => {
     var coinCounter = new CoinCounter(1.75, 2.40);
     var coins = coinCounter.countChange();
     console.log(coins);
-    expect(coins).toEqual(" Nickels: 1 Dimes: 1 Quarters: 2")
+    expect(coins).toEqual("Nickels: 1 Dimes: 1 Quarters: 2 ")
   });
 
   test ('returns string of number of all coins', () => {
