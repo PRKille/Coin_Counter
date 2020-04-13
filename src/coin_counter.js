@@ -13,7 +13,7 @@ CoinCounter.prototype.toCoins = function(change, coins) {
     return [];
   } else {
     if (change >= coins[0]) {
-      remains = (change - coins[0]);
+      let remains = (change - coins[0]);
       return [coins[0]].concat( this.toCoins(remains, coins));
     } else {
       coins.shift();
