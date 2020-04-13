@@ -1,11 +1,11 @@
 {
-  "name": "sudoku",
+  "name": "coin_counter",
   "version": "1.0.0",
   "description": "#### _{Brief description of application}, {Date of current version}_",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build & webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest"
   },
